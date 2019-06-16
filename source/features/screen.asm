@@ -87,7 +87,7 @@ os_draw_background:
 	mov ah, 09h			; Draw white bar at top
 	mov bh, 0
 	mov cx, 80
-	mov bl, 00011111b
+	mov bl, 10001111b
 	mov al, ' '
 	int 10h
 
@@ -109,7 +109,7 @@ os_draw_background:
 	mov ah, 09h			; Draw white bar at bottom
 	mov bh, 0
 	mov cx, 80
-	mov bl, 00011111b
+	mov bl, 10001111b
 	mov al, ' '
 	int 10h
 
@@ -395,7 +395,7 @@ os_dialog_box:
 	ret
 
 
-	.ok_button_string	db 'HDI', 0
+	.ok_button_string	db 'HInfo', 0
 	.cancel_button_string	db 'Exit', 0
 	.ok_button_noselect	db 'HardwareInfo', 0
 	.cancel_button_noselect	db '   Exit   ', 0

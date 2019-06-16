@@ -77,8 +77,8 @@ option_screen:
 	os_init_msg2		db '                         Hardware Information                               ', 0
 	os_version_msg2		db 'Version ', DRAGONOS_VER, 0
 
-	dialog_string_1		db 'Welcome to AquaSeven Operating System', 0
-	dialog_string_2		db 'Please select HDI for HardwareInfo or', 0
+	dialog_string_1		db 'Welcome to Dragon Operating System', 0
+	dialog_string_2		db 'Please select HInfo for HardwareInfo or', 0
 	dialog_string_3		db 'select Exit for quit the OS.', 0
 
 os_exit:
@@ -90,7 +90,7 @@ os_exit:
 os_draw_background1:
 	mov ax, os_init_msg2		; Set up the welcome screen
 	mov bx, os_version_msg2
-	mov cx, 00011111b		; Colour: white text on light blue
+	mov cx, 00000111b		; Colour: white text on light blue
 
 	pusha
 
